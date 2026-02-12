@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WattWeise - Gallery</title>
+    <!-- <link rel="icon" href="images/ww.svg" type="image/svg+xml"> -->
+    <!-- Google-friendly favicons -->
+    <!-- <link rel="icon" href="images/favicon.ico" sizes="any"> -->
+    <link rel="icon" type="image/ww.png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="images/ww.png" sizes="16x16" href="images/favicon-16x16.png">
+
+    <!-- SVG (for modern browsers only) -->
+    <link rel="icon" href="images/ww.svg" type="image/svg+xml">
+
+    <meta name="description"
+        content="WattWeise delivers innovative E-TAP solutions, digital excellence, and smart electrical experiences that power the future.Offering best etap services, training" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&family=Syne:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="wattweise.css" />
+
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader-ring"></div>
+        <div class="loading-text">Initializing Experience...</div>
+    </div>
+
+    <!-- Ambient Background -->
+    <div class="ambient-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Grid Overlay -->
+    <div class="grid-overlay"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Gallery Section -->
+        <div class="content-section active" style="display: block; opacity: 1; transform: translateY(0);" id="gallery">
+            <div class="section-header-small">
+                <div class="small-logo">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="smallLogoGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color: #00f0ff" />
+                                <stop offset="100%" style="stop-color: #ff00d4" />
+                            </linearGradient>
+                        </defs>
+                        <!-- <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none"
+                            stroke="url(#smallLogoGrad3)" stroke-width="3" />
+                        <circle cx="50" cy="50" r="10" fill="url(#smallLogoGrad3)" /> -->
+                        <image style="height: 100px;width: 100px;" href="images/ww.svg" x="0" y="0" width="100"
+                            height="100" preserveAspectRatio="xMidYMid meet" />
+                    </svg>
+                </div>
+                <div class="small-brand">
+                    <h3>WattWeise</h3>
+                    <p>Energizing Future</p>
+                </div>
+            </div>
+            <a href="index.html" class="back-btn">
+                ← Back to Menu
+            </a>
+
+            <div class="section-header">
+                <h2 class="section-title">Our Portfolio</h2>
+                <p class="section-subtitle">Explore our latest works</p>
+            </div>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterGallery('all', this)">
+                    All
+                </button>
+                <button class="filter-btn" onclick="filterGallery('web', this)">
+                    Web
+                </button>
+                <button class="filter-btn" onclick="filterGallery('mobile', this)">
+                    Mobile
+                </button>
+                <button class="filter-btn" onclick="filterGallery('branding', this)">
+                    Branding
+                </button>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="web">
+                    <img src="images/coding-screen.jpg" alt="Project 1" />
+                    <div class="gallery-overlay">
+                        <h4>E-Commerce Platform</h4>
+                        <p>Web Development</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="mobile">
+                    <img src="images/ai-mobile-app.jpg" alt="Project 2" />
+                    <div class="gallery-overlay">
+                        <h4>Fitness App</h4>
+                        <p>Mobile Development</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="branding">
+                    <img src="images/brand-identity.jpg" alt="Project 3" />
+                    <div class="gallery-overlay">
+                        <h4>Brand Identity</h4>
+                        <p>Design & Branding</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="web">
+                    <img src="images/managed-service.jpg" alt="Project 4" />
+                    <div class="gallery-overlay">
+                        <h4>Analytics Dashboard</h4>
+                        <p>Web Application</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="mobile">
+                    <img src="images/ai-optimized-templates.jpg" alt="Project 5" />
+                    <div class="gallery-overlay">
+                        <h4>Banking App</h4>
+                        <p>Mobile Development</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="branding">
+                    <img src="images/digital-strategy.jpg" alt="Project 6" />
+                    <div class="gallery-overlay">
+                        <h4>Startup Branding</h4>
+                        <p>Design & Identity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer" id="mainFooter" style="opacity: 1; animation: none;">
+            <p>
+                © 2025 WattWeise. Crafted with passion. Design by
+                <a href="https://templatemo.com" target="_blank">WattWeise Dev</a>
+            </p>
+        </footer>
+    </div>
+    <script src="wattweise.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WattWeise - Services</title>
+    <!-- <link rel="icon" href="images/ww.svg" type="image/svg+xml"> -->
+    <!-- Google-friendly favicons -->
+    <!-- <link rel="icon" href="images/favicon.ico" sizes="any"> -->
+    <link rel="icon" type="image/ww.png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="images/ww.png" sizes="16x16" href="images/favicon-16x16.png">
+
+    <!-- SVG (for modern browsers only) -->
+    <link rel="icon" href="images/ww.svg" type="image/svg+xml">
+
+    <meta name="description"
+        content="WattWeise delivers innovative E-TAP solutions, digital excellence, and smart electrical experiences that power the future.Offering best etap services, training" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&family=Syne:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="wattweise.css" />
+
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader-ring"></div>
+        <div class="loading-text">Initializing Experience...</div>
+    </div>
+
+    <!-- Ambient Background -->
+    <div class="ambient-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Grid Overlay -->
+    <div class="grid-overlay"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Services Section -->
+        <div class="content-section active" style="display: block; opacity: 1; transform: translateY(0);" id="services">
+            <div class="section-header-small">
+                <div class="small-logo">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="smallLogoGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color: #00f0ff" />
+                                <stop offset="100%" style="stop-color: #ff00d4" />
+                            </linearGradient>
+                        </defs>
+                        <!-- <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none"
+                            stroke="url(#smallLogoGrad2)" stroke-width="3" />
+                        <circle cx="50" cy="50" r="10" fill="url(#smallLogoGrad2)" /> -->
+                        <image style="height: 100px;width: 100px;" href="images/ww.svg" x="0" y="0" width="100"
+                            height="100" preserveAspectRatio="xMidYMid meet" />
+                    </svg>
+                </div>
+                <div class="small-brand">
+                    <h3>WattWeise</h3>
+                    <p>Digital Excellence</p>
+                </div>
+            </div>
+            <a href="index.html" class="back-btn">
+                ← Back to Menu
+            </a>
+
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">
+                    Comprehensive solutions for the digital age
+                </p>
+            </div>
+
+            <div class="tabs-container">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" onclick="switchTab(this, 'solutions')">
+                        Solutions
+                    </button>
+                    <button class="tab-btn" onclick="switchTab(this, 'industries')">
+                        Industries
+                    </button>
+                    <button class="tab-btn" onclick="switchTab(this, 'consulting')">
+                        Consulting
+                    </button>
+                    <button class="tab-btn" onclick="switchTab(this, 'support')">
+                        Support
+                    </button>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="solutions">
+                        <div class="services-list">
+
+                            <div class="service-row">
+                                <div class="service-row-icon">
+                                    <img src="images/ai-optimized-templates.jpg" alt="AI Development" />
+                                </div>
+                                <div class="service-row-content">
+                                    <h4>Power System Studies</h4>
+                                    <p>
+                                        Accurate modelling of electrical networks to ensure reliability, capacity,
+                                        and safe operation.
+                                    </p>
+                                </div>
+                                <div class="service-row-arrow">→</div>
+                            </div>
+                            <div class="service-row">
+                                <div class="service-row-icon">
+                                    <img src="images/coding-screen.jpg" alt="Web Applications" />
+                                </div>
+                                <div class="service-row-content">
+                                    <h4>Arc Flash & Electrical Safety</h4>
+                                    <p>
+                                        Arc flash studies and safety solutions to protect personnel and meet
+                                        international standards.
+                                    </p>
+                                </div>
+                                <div class="service-row-arrow">→</div>
+                            </div>
+                            <div class="service-row">
+                                <div class="service-row-icon">
+                                    <img src="images/ai-mobile-app.jpg" alt="Mobile Apps" />
+                                </div>
+                                <div class="service-row-content">
+                                    <h4>Power Quality</h4>
+                                    <p>
+                                        Identify, analyse, and mitigate power quality issues to improve system
+                                        performance.
+                                    </p>
+                                </div>
+                                <div class="service-row-arrow">→</div>
+                            </div>
+                            <div class="service-row">
+                                <div class="service-row-icon">
+                                    <img src="images/ai-optimized-templates.jpg" alt="AI Development" />
+                                </div>
+                                <div class="service-row-content">
+                                    <h4>Energy Management</h4>
+                                    <p>
+                                        Optimise energy usage, reduce losses, and improve overall electrical
+                                        efficiency.
+                                    </p>
+                                </div>
+                                <div class="service-row-arrow">→</div>
+                            </div>
+                            <div class="service-row">
+                                <div class="service-row-icon">
+                                    <img src="images/coding-screen.jpg" alt="Web Applications" />
+                                </div>
+                                <div class="service-row-content">
+                                    <h4>Training</h4>
+                                    <p>
+                                        Industry-focused training to build practical power system and software
+                                        skills.
+                                    </p>
+                                </div>
+                                <div class="service-row-arrow">→</div>
+                            </div>
+                            <div class="service-row">
+                                <div class="service-row-icon">
+                                    <img src="images/ai-mobile-app.jpg" alt="Mobile Apps" />
+                                </div>
+                                <div class="service-row-content">
+                                    <h4>Grid Analysis</h4>
+                                    <p>
+                                        Grid impact, compliance, and stability studies for utility and renewable
+                                        integration.
+                                    </p>
+                                </div>
+                                <div class="service-row-arrow">→</div>
+                            </div>
+                            <div class="service-row">
+                                <div class="service-row-icon">
+                                    <img src="images/ai-mobile-app.jpg" alt="Mobile Apps" />
+                                </div>
+                                <div class="service-row-content">
+                                    <h4>Engineering Services</h4>
+                                    <p>
+                                        End-to-end electrical engineering support from concept design to execution.
+                                    </p>
+                                </div>
+                                <div class="service-row-arrow">→</div>
+                            </div>
+                            <div class="service-row">
+                                <div class="service-row-icon">
+                                    <img src="images/ai-mobile-app.jpg" alt="Mobile Apps" />
+                                </div>
+                                <div class="service-row-content">
+                                    <h4>Power Meters & Protection Devices</h4>
+                                    <p>
+                                        Selection, coordination, and configuration of meters and protection systems
+                                        for safe operation.
+                                    </p>
+                                </div>
+                                <div class="service-row-arrow">→</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="industries">
+                        <div class="services-list">
+                            <div class="service-row">
+                                <div class="service-row-icon">
+                                    <img src="images/design-screen.jpg" alt="UX/UI Design" />
+                                </div>
+                                <div class="service-row-content">
+                                    <h4>Data Centre</h4>
+                                    <p>
+                                        Supporting reliable, scalable, and resilient power systems for
+                                        mission-critical data centres.
+                                    </p>
+                                </div>
+                                <div class="service-row-arrow">→</div>
+                            </div>
+                            <div class="service-row">
+                                <div class="service-row-icon">
+                                    <img src="images/brand-identity.jpg" alt="Brand Identity" />
+                                </div>
+                                <div class="service-row-content">
+                                    <h4>Pharmaceutical</h4>
+                                    <p>
+                                        Advanced Power Solutions for Pharmaceutical & Medical Manufacturing Power
+                                        Solutions.
+                                    </p>
+                                </div>
+                                <div class="service-row-arrow">→</div>
+                            </div>
+                            <div class="service-row">
+                                <div class="service-row-icon">
+                                    <img src="images/motion-design.jpg" alt="Motion Design" />
+                                </div>
+                                <div class="service-row-content">
+                                    <h4>Renewable Energy</h4>
+                                    <p>
+                                        Renewable projects need strong engineering, accurate modelling, and grid
+                                        compliance for success.
+                                    </p>
+                                </div>
+                                <div class="service-row-arrow">→</div>
+                            </div>
+                            <div class="service-row">
+                                <div class="service-row-icon">
+                                    <img src="images/design-screen.jpg" alt="Motion Design" />
+                                </div>
+                                <div class="service-row-content">
+                                    <h4>Advanced manufacturing</h4>
+                                    <p>
+                                        We support advanced manufacturing with safe, compliant electrical
+                                        engineering solutions.
+                                    </p>
+                                </div>
+                                <div class="service-row-arrow">→</div>
+                            </div>
+                            <div class="service-row">
+                                <div class="service-row-icon">
+                                    <img src="images/brand-identity.jpg" alt="Motion Design" />
+                                </div>
+                                <div class="service-row-content">
+                                    <h4>Power, Oil & Gas</h4>
+                                    <p>
+                                        Providing reliable power engineering, analysis, and consultancy for oil,
+                                        gas, and energy projects.
+                                    </p>
+                                </div>
+                                <div class="service-row-arrow">→</div>
+                            </div>
+                            <div class="service-row">
+                                <div class="service-row-icon">
+                                    <img src="images/motion-design.jpg" alt="Motion Design" />
+                                </div>
+                                <div class="service-row-content">
+                                    <h4>Food & Beverage</h4>
+                                    <p>
+                                        Supporting food and beverage plants with safe, efficient electrical
+                                        engineering solutions.
+                                    </p>
+                                </div>
+                                <div class="service-row-arrow">→</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="consulting">
+                        <div class="services-list">
+                            <div class="service-row">
+                                <div class="service-row-icon">
+                                    <img src="images/digital-strategy.jpg" alt="Digital Strategy" />
+                                </div>
+                                <div class="service-row-content">
+                                    <h4>Digital Strategy</h4>
+                                    <p>
+                                        Strategic planning for digital transformation
+                                        initiatives that align technology with business
+                                        objectives.
+                                    </p>
+                                </div>
+                                <div class="service-row-arrow">→</div>
+                            </div>
+                            <div class="service-row">
+                                <div class="service-row-icon">
+                                    <img src="images/tech-audit.jpg" alt="Technology Audit" />
+                                </div>
+                                <div class="service-row-content">
+                                    <h4>Technology Audit</h4>
+                                    <p>
+                                        Comprehensive assessment of your tech infrastructure to
+                                        identify opportunities and optimize performance.
+                                    </p>
+                                </div>
+                                <div class="service-row-arrow">→</div>
+                            </div>
+                            <div class="service-row">
+                                <div class="service-row-icon">
+                                    <img src="images/process-optimized.jpg" alt="Process Optimization" />
+                                </div>
+                                <div class="service-row-content">
+                                    <h4>Process Optimization</h4>
+                                    <p>
+                                        Streamline workflows with automation and best practices
+                                        for maximum efficiency and productivity.
+                                    </p>
+                                </div>
+                                <div class="service-row-arrow">→</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="support">
+                        <div class="services-list">
+                            <div class="service-row">
+                                <div class="service-row-icon">
+                                    <img src="images/247-support.jpg" alt="24/7 Support" />
+                                </div>
+                                <div class="service-row-content">
+                                    <h4>24/7 Support</h4>
+                                    <p>
+                                        Round-the-clock technical assistance and maintenance to
+                                        keep your systems running smoothly.
+                                    </p>
+                                </div>
+                                <div class="service-row-arrow">→</div>
+                            </div>
+                            <div class="service-row">
+                                <div class="service-row-icon">
+                                    <img src="images/training-center.jpg" alt="Training" />
+                                </div>
+                                <div class="service-row-content">
+                                    <h4>Training & Workshops</h4>
+                                    <p>
+                                        Empower your team with expert-led training sessions
+                                        tailored to your technology stack.
+                                    </p>
+                                </div>
+                                <div class="service-row-arrow">→</div>
+                            </div>
+                            <div class="service-row">
+                                <div class="service-row-icon">
+                                    <img src="images/managed-service.jpg" alt="Managed Services" />
+                                </div>
+                                <div class="service-row-content">
+                                    <h4>Managed Services</h4>
+                                    <p>
+                                        End-to-end management of your digital infrastructure for
+                                        worry-free operations.
+                                    </p>
+                                </div>
+                                <div class="service-row-arrow">→</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer" id="mainFooter" style="opacity: 1; animation: none;">
+            <p>
+                © 2025 WattWeise. Crafted with passion. Design by
+                <a href="https://templatemo.com" target="_blank">WattWeise Dev</a>
+            </p>
+        </footer>
+    </div>
+    <script src="wattweise.js"></script>
+</body>
+
+</html>

@@ -277,6 +277,10 @@ body {
 	opacity: 0;
 	transform: translateY(30px) scale(0.9);
 	transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	text-decoration: none;
+	/* Removed underline for anchor tag */
+	color: inherit;
+	/* Inherit text color */
 }
 
 /* Glossy effect overlay */
@@ -519,6 +523,10 @@ body {
 	cursor: pointer;
 	transition: all 0.3s ease;
 	z-index: 100;
+	text-decoration: none;
+	/* Ensure no underline */
+	display: inline-block;
+	/* Ensure it respects padding/dimensions */
 }
 
 .back-btn:hover {
