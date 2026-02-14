@@ -798,6 +798,91 @@ body {
 	}
 }
 
+/* ===== SERVICE DETAILS PAGE STYLES ===== */
+
+.service-details-container {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	margin-bottom: 60px;
+}
+
+.detail-row {
+	display: flex;
+	align-items: center;
+	gap: 50px;
+	background: var(--glass-bg);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	border: 1px solid var(--glass-border);
+	border-radius: 20px;
+	padding: 40px;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.4s ease;
+}
+
+.detail-row:hover {
+	border-color: rgba(0, 240, 255, 0.3);
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.detail-row.reverse {
+	flex-direction: row-reverse;
+}
+
+.detail-image {
+	flex: 1;
+	position: relative;
+	overflow: hidden;
+	border-radius: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.detail-image img {
+	width: 100%;
+	height: auto;
+	display: block;
+	transition: transform 0.5s ease;
+}
+
+.detail-row:hover .detail-image img {
+	transform: scale(1.05);
+}
+
+.detail-text {
+	flex: 1;
+}
+
+.detail-text h3 {
+	font-family: 'Syne', sans-serif;
+	font-size: 28px;
+	margin-bottom: 15px;
+	color: var(--primary);
+}
+
+.detail-text p {
+	font-size: 16px;
+	line-height: 1.7;
+	color: rgba(255, 255, 255, 0.8);
+	margin-bottom: 20px;
+}
+
+/* Responsive adjustments for details page */
+@media (max-width: 900px) {
+
+	.detail-row,
+	.detail-row.reverse {
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	.detail-image,
+	.detail-text {
+		width: 100%;
+	}
+}
+
 .card-2 {
 	animation-name: floatCardAlt;
 }
